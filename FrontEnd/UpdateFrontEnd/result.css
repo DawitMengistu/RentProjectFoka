@@ -33,10 +33,20 @@
 }
 
 .img-container {
-    width: 300px;
+    width: 300px; 
     height: 280px;
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+.carousel-inner {
+    width: 300px; 
+    height: 280px;
+}
+.carousel-item {
+    height: 100%;
+}
 
+.card-img {
+    object-fit: cover !important;
 }
 
 .img-container img {
@@ -79,29 +89,3 @@
     font-size: 16px;
     margin: 5px ;
 }
-
-
-
-.label-dropdown {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    margin-right: 5px;
-}
-select,
-.search {
-    width: 120px;
-    height: 30px;
-    border: 3px solid black;
-    border-radius: 4px;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    background-color: black;
-}
-
-select:hover,
-.search:hover {
-    cursor: pointer;
-}
-

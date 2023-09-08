@@ -1,6 +1,6 @@
 
 const slider = document.querySelector(".input");
-const inputNumber = document.querySelector(".inputnumber");
+
 
 const value  =  document.querySelector(".value");
 
@@ -9,11 +9,8 @@ slider.oninput=function(){
     value.textContent= this.value;
 }
 
-value.textContent =inputNumber .value;
-inputNumber.oninput=function(){
-    value.textContent= this.value;
-}
-// this is a new comment
+
+
 const btn = document.querySelector(".btn");
 
 const serach = document.querySelector(".search");
@@ -47,11 +44,11 @@ serach.addEventListener("click", (e)=>{
     // console.log(slider.value)
     // console.log(room)
     // console.log(location)
-    // console.log(inputNumber.value)
+
 
 
     let link = "http://localhost:5000/users/search/"
-    link += room + "?"+"type" + "=" + dropdown +  "&"+ "price" + "=" + (inputNumber.value || slider.value)
+    link += room + "?"+"type" + "=" + dropdown +  "&"+ "price" + "=" + slider.value
 
     // console.log(link) 
     fetch(link)
